@@ -201,13 +201,9 @@ nav:hover::after{
 }
 
 /*모바일*/
-.nav{
-  display: none;
-}
+.nav{display: none;}
 
-.trigger2{
-  display: none;
-}
+.trigger2{display: none;}
 
 /* trigger */
 
