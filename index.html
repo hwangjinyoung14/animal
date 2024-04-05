@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Protection System</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="inner header_inner">
+        <div class="mobile_top">
+          <img src="img/icon/search_mobile.svg" alt="search">
+          <img src="img/icon/bell_mobile.svg" alt="search">
+        </div>
+        <div class="logo">
+          <a href="index.html"><img src="img/로고.svg" alt="logo"></a> 
+        </div>
+        <div class="my_infor">
+          <a href="#none" id="login">
+            로그인
+            <div class="click_btn">
+              <img src="img/icon/click_me_hand.png" alt="hand">
+              <img src="img/icon/click_me_pop.png" alt="hand">
+            </div>
+          </a>
+          <a href="#none">회원가입</a>
+          <a href="#none">마이페이지</a>
+        </div>
+      </div>
+      <nav>
+        <div class="inner nav_inner">
+          <ul>
+            <li><a href="#none">구조동물</a>
+              <div class="sub_menu">
+                <a href="#none">유기동물</a>
+                <a href="#none">분실정보</a>
+                <a href="#none">보호&보호종료 동물</a>
+                <a href="#none">동물보호센터</a>
+                <a href="#none">입양하기</a>
+              </div>
+            </li>
+            <li><a href="#none">등록동물</a>
+              <div class="sub_menu">
+                <a href="#none">동물등록제란?</a>
+                <a href="#none">동물등록검색</a>
+                <a href="#none">해외동물등록번호 조회</a>
+                <a href="#none">등록대행업체</a>
+                <a href="#none">동물등록FAQ</a>
+              </div>
+            </li>
+            <li><a href="#none">농장동물</a>
+              <div class="sub_menu">
+                <a href="#none">농장동물복지개요</a>
+                  <a href="#none">동물복지축산농장인증</a>
+                  <a href="#none">동물복지축산농장 조회</a>
+              </div>
+            </li>
+            <li><a href="#none">정보마당</a>
+              <div class="sub_menu">
+                <a href="#none">정보</a>
+                <a href="#none">동물보호 업무부서</a>
+                <a href="#none">온라인 민원신청</a>
+                <a href="#none">업체정보</a>
+              </div>
+            </li>
+            <li><a href="#none">정책홍보</a>
+              <div class="sub_menu">
+                <a href="#none">시스템 소개</a>
+                  <a href="#none">법령 및 정책</a>
+                  <a href="#none">동물보호 명예감시원</a>
+                  <a href="#none">TNR</a>
+                  <a href="#none">홍보 자료실</a>
+              </div>
+            </li>
+          </ul>
+          <div class="trigger">
+            <div class="trigger_inner">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="nav">
+        <div class="click_btn">
+          <img src="img/icon/click_me_hand.png" alt="hand">
+          <img src="img/icon/click_me_pop.png" alt="hand">
+        </div>
+        <div class="mobile_login">
+          <a href="index.html">홈</a>
+          <span>|</span>
+          <a href="#none" id="login2">로그인</a>
+          <span>|</span>
+          <a href="#none">마이페이지</a>
+        </div>
+        <ul id="list">
+          <li>
+            <a href="#none">
+              구조동물
+            <img src="img/icon/mobile_arrow.svg" alt="arrow">
+            </a>
+            <div class="sub_menu2">
+              <a href="#none">유기동물</a>
+              <a href="#none">분실정보</a>
+              <a href="#none">보호&보호종료 동물</a>
+              <a href="#none">동물보호센터</a>
+              <a href="#none">입양하기</a>
+            </div>
+          </li>
+          <li>
+            <a href="#none">
+              등록동물
+              <img src="img/icon/mobile_arrow.svg" alt="arrow">
+            </a>
+            <div class="sub_menu2">
+              <a href="#none">동물등록제란?</a>
+              <a href="#none">동물등록검색</a>
+              <a href="#none">해외동물등록번호 조회</a>
+              <a href="#none">등록대행업체</a>
+              <a href="#none">동물등록FAQ</a>
+            </div>
+          </li>
+          <li>
+            <a href="#none">
+              농장동물
+              <img src="img/icon/mobile_arrow.svg" alt="arrow">
+            </a>
+            <div class="sub_menu2">
+              <a href="#none">농장동물복지개요</a>
+              <a href="#none">동물복지축산농장인증</a>
+              <a href="#none">동물복지축산농장 조회</a>
+            </div>
+          </li>
+          <li>
+            <a href="#none">
+              정보마당
+              <img src="img/icon/mobile_arrow.svg" alt="arrow">
+            </a>
+            <div class="sub_menu2">
+              <a href="#none">정보</a>
+              <a href="#none">동물보호 업무부서</a>
+              <a href="#none">온라인 민원신청</a>
+              <a href="#none">업체정보</a>
+            </div>
+          </li>
+          <li>
+            <a href="#none">
+              정책홍보
+              <img src="img/icon/mobile_arrow.svg" alt="arrow">
+            </a>
+            <div class="sub_menu2">
+              <a href="#none">시스템 소개</a>
+                <a href="#none">법령 및 정책</a>
+                <a href="#none">동물보호 명예감시원</a>
+                <a href="#none">TNR</a>
+                <a href="#none">홍보 자료실</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="trigger2">
+        <span></span><span></span><span></span>
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="inner">
+          <div class="main_title">
+            <div class="search">
+              <input type="text" placeholder=" |  동물등록하기는 어떻게 하나요?">
+              <img src="img/icon/search.svg" alt="search">
+              <span></span>
+            </div>
+            <div class="main_text">
+              <h1>
+                <span>"</span> &nbsp; &nbsp; 동물학대를 방지하고
+              </h1>
+              <h1>
+                <b>생명존중의 문화</b>를 꽃피웁니다.&nbsp;&nbsp;<span>"</span>
+              </h1>
+              <button>동물학대 신고하기</button>
+            </div>
+          </div>
+          <div class="mainQuick_box">
+            <a class="mainQuick" href="#none">
+              <img src="img/main_bg_icon/Animall_registration.svg" alt="registration">
+              <h2>동물등록</h2>
+            </a>
+            <a class="mainQuick" href="#none">
+              <img src="img/main_bg_icon/law.svg" alt="law">
+              <h2>정책&법령</h2>
+            </a>
+            <a class="mainQuick" href="#none">
+              <img src="img/main_bg_icon/farm_animals.svg" alt="farm">
+              <h2>농장동물</h2>
+            </a>
+          </div>
+        </div>
+        <div class="mainbg_inner">
+          <div class="main_illu">
+            <img src="img/wom_ill.svg" alt="women">
+            <img src="img/main_bg_icon/tree1.svg" alt="tree">
+            <img src="img/man_ill.svg" alt="man">
+            <div class="twing">
+              <img src="img/main_bg_icon/star1.svg" alt="star">
+              <img src="img/main_bg_icon/star1.svg" alt="star">
+              <img src="img/main_bg_icon/star2.svg" alt="star">
+              <img src="img/main_bg_icon/twing1.svg" alt="twing">
+              <img src="img/main_bg_icon/twing2.svg" alt="twing">
+              <img src="img/main_bg_icon/twing3.svg" alt="twing">
+              <img src="img/main_bg_icon/twing4.svg" alt="twing">
+              <img src="img/main_bg_icon/twing.svg" alt="twing">
+              <img src="img/main_bg_icon/circle.svg" alt="twing">
+              <img src="img/main_bg_icon/circle.svg" alt="twing">
+              <img src="img/main_bg_icon/circle3.svg" alt="twing">
+            </div>
+            <div class="bg">
+              <img src="img/main_bg2.svg" alt="anibg">
+              <img src="img/main_bg.svg" alt="anibg">
+            </div>
+          </div>
+        </div>  
+      </section>
+      <section class="tab">
+        <div class="inner tab_inner">
+          <div class="tab_menu">
+            <div class="title">
+              <a href="#tabmenu1" class="on">정부 24 전자지갑<br>동물등록증</a>  
+              <a href="#tabmenu2">반려동물 신고</a>
+              <a href="#tabmenu3">TNR</a>
+              <a href="#tabmenu4">동물복지축산농장<br>인증 절차</a>
+            </div>
+          </div>
+          <a class="plus" href="#none">
+            <h5>공고 더보기</h5>
+            <i class="fa-regular fa-plus"></i>
+          </a>
+          <div class="tab_content">
+            <div id="tabmenu1">
+              <h2>23.2.23일부터 동물소유자께서는 동물등록증을 행정서비스 <b>통합시스템인 정부24(모바일앱)</b> 전자지갑에서도 확인할 수 있습니다.</h2>
+              <div class="content_inner">
+                <div class="step_box">
+                  <div class="step">
+                    <h4>step.1</h4>
+                  </div>
+                  <div class="t_desc">
+                    <img src="img/icon/tap_app.svg" alt="tap_app">
+                    <h3>정부24 모바일앱</h3>
+                    <p>회원가입 및<br>전자지갑 생성</p>
+                  </div>
+                </div>
+                <img src="img/icon/tap_menu1_button.svg" alt="button">
+                <div class="step_box">
+                  <div class="step">
+                    <h4>step.2</h4>
+                  </div>
+                  <div class="t_desc">
+                    <h3>국가동물보호정보시스템<br>(www.animal.go.kr)</h3>
+                    <p>등록동물 연결 후<br>[등록동물(변경)정보] 내<br><전자증명서>발급</p>
+                  </div>
+                </div>
+                <img src="img/icon/tap_menu1_button.svg" alt="button">
+                <div class="step_box">
+                  <div class="step">
+                    <h4>step.3</h4>
+                  </div>
+                  <div class="t_desc">
+                    <img src="img/icon/tap_app2.svg" alt="tap_app2">
+                    <h3>전자지갑에서<br>동물등록증 확인</h3>
+                    <p>카카오, 네이버 등 전자지갑<br>사용 앱에서도 확인가능</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tabmenu2">
+              <h2>아래의 서비스를 이용하기 위해선 우선 <b>‘동물등록’</b>을  해주셔야 합니다.</h2>
+              <p>* 등록대상동물 : 주택·준주택에서 기르거나 그 외의 장소에서 반려 목적으로 기르는 월령 2개월 이상인 개</p>
+              <div class="content_inner2">
+                <div class="tab2_box">
+                  <img src="img/tab2_step1.svg" alt="tab2_step1">
+                  <div class="tab2_desc">
+                    <h4>반려동물</h4>
+                    <h2>분실신고</h2>
+                  </div>
+                </div>
+                <div class="tab2_box">
+                  <img src="img/tab2_step2.svg" alt="tab2_step2">
+                  <div class="tab2_desc">
+                    <h4>반려동물</h4>
+                    <h2>사망신고</h2>
+                  </div>
+                </div>
+                <div class="tab2_box">
+                  <img src="img/tab2_step3.svg" alt="tab2_step3">
+                  <div class="tab2_desc">
+                    <h4>등록동물</h4>
+                    <h2>정보변경</h2>
+                  </div>
+                </div>
+                <div class="tab2_box">
+                  <img src="img/tab2_step4.svg" alt="tab2_step4">
+                  <div class="tab2_desc">
+                    <h4>등록동물</h4>
+                    <h2>등록증 출력</h2>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div id="tabmenu3">
+              <div class="menu3_title">
+                <div class="purpose">
+                  <h2>제1조 목적</h2>
+                  <img src="img/tab3_TNR_1.png" alt="TNR">
+                </div>
+                <h3>이 규정은「동물보호법」에서 규정하고 있는 고양이 중성화 사업 등에 관하여 필요한 사항을 정함을 목적으로 한다.</h3>
+              </div>
+              <div class="menu3_title_container">
+                <div class="menu3_title_grap">
+                  <ul class="grap1">
+                    <li>제2조(적용대상)</li>
+                    <li class="arrow">
+                      <img src="img/tab3_arrow1.png" alt="arrow1">
+                    </li>
+                    <li>제3조(중성화)</li>
+                    <li class="arrow">
+                      <img src="img/tab3_arrow2.png" alt="arrow1">
+                    </li>
+                    <li>제4조(사업의 시행)</li>
+                    <li class="arrow">
+                      <img src="img/tab3_arrow3.png" alt="arrow1">
+                    </li>
+                  </ul>
+                  <ul class="grap1-1">
+                    <li class="arrow">
+                      <img src="img/tab3_arrow_mobile_left.png" alt="arrow">
+                    </li>
+                    <li>제5조(사업시행자의 지정기준)</li>
+                    <li class="arrow">
+                      <img src="img/tab3_arrow_mobile_right.png" alt="arrow">
+                    </li>
+                  </ul>
+                </div>
+                <div class="menu3_title_grap2">
+                  <ul class="grap2">
+                    <li>제6조(포획 및 관리)</li>
+                    <li class="arrow">
+                      <img src="img/tab3_arrow4.png" alt="arrow4">
+                    </li>
+                    <li>제7조(중성화 수술)</li>
+                    <li class="arrow">
+                      <img src="img/tab3_arrow5.png" alt="arrow5">
+                    </li>
+                    <li>제8조(방사)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="TNR_quick">
+              <h3>길고양이 중성화 사업(TNR) 조회하기</h3>
+              <img src="img/tab3_quick.png" alt="quick">
+              </div>
+            </div>
+            <div id="tabmenu4">
+              <div class="menu4_title">
+                <h2>동물복지 축산농장 인증절차</h2>
+                <p>인증을 받고자 하는 축산농가가 서류를 구비하여 농림축산검역본부에 인증신청을 하면<br>
+                  서류심사와 현장심사를 거쳐 인증기준에 적합한 경우 인증서를 교부하고 지속적인 사후관리를 실시합니다.</p>
+              </div>
+              <div class="menu4_title">
+                <h2>동물복지 축산농장 인증절차</h2>
+                <p>인증을 받고자 하는 축산농가가 서류를 구비하여 농림축산검역본부에<br> 인증신청을 하면
+                  서류심사와 현장심사를 거쳐 인증기준에 적합한 경우<br> 인증서를 교부하고 지속적인 사후관리를 실시합니다.</p>
+              </div>
+              <div class="menu4_container">
+                <div class="menu4_contents">
+                  <div class="confirm_box">
+                    <img src="img/icon/tab4_confirm_icon.svg" alt="confirm">
+                    <h3>인증신청</h3>
+                  </div>
+                  <img src="img/icon/tab4_arrow_btn.svg" alt="arrow_btn">
+                  <div class="confirm_box">
+                    <img src="img/icon/tab4_confirm_icon2.svg" alt="confirm">
+                    <h3>서류심사</h3>
+                  </div>
+                  <img src="img/icon/tab4_arrow_btn.svg" alt="arrow_btn">
+                  <div class="confirm_box">
+                    <img src="img/icon/tab4_confirm_icon3.svg" alt="confirm">
+                    <h3>현장심사</h3>
+                  </div>
+                </div>
+                <div class="menu4_contents2">
+                  <img src="img/icon/tab4_arrow_btn.svg" alt="arrow_btn">
+                  <div class="confirm_box">
+                    <img src="img/icon/tab4_confirm_icon4.svg" alt="confirm">
+                    <h3>인증서 교부</h3>
+                  </div>
+                  <img src="img/icon/tab4_arrow_btn.svg" alt="arrow_btn">
+                  <div class="confirm_box">
+                    <img src="img/icon/tab4_confirm_icon5.svg" alt="confirm">
+                    <h3>사후관리</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="update">
+        <div class="inner update_inner">
+          <div class="update_title">
+            <h2>업데이트 소식 바로보기</h2>
+            <div class="update_wraper">
+              <ul class="update_list">
+                <li><a href="#none">동물등록 변경신고 안내</a></li>
+                <li><a href="#none">[동물보호법] 제36조 제2항 및 제3항</a></li>
+                <li><a href="#none">반려동물 불법&편법 영업 근절</a></li>
+                <li><a href="#none">정부 24 온라인 변경 신고 알림</a></li>
+                <li><a href="#none">개구리 해부 AR실감형 콘텐츠</a></li>
+                <li><a href="#none">맹견 소유자 보수 교육</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Swiper -->
+          <div class="update_swiper_wrapper">
+            <div class="swiper update_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/update_poster1.png" alt="update_poster1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/update_poster2.png" alt="update_poster2">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/update_poster3.png" alt="update_poster3">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/update_poster4.png" alt="update_poster4">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/update_poster5.png" alt="update_poster5">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/update_poster6.png" alt="update_poster6">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <article class="adopt">
+        <div class="inner adopt_inner">
+          <h2>보호중 동물</h2>
+          <!-- Swiper -->
+          <div class="adopt_swiper_wrapper">
+            <div class="swiper adopt_swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#none">
+                    <div class="card_img">
+                      <img src="img/animal1.png" alt="animal1">
+                    </div>
+                    <div class="card_desc">
+                      <div class="name">
+                        <h3>찹쌀이</h3>
+                        <h4>수컷</h4>
+                      </div>
+                      <div class="data">
+                        <p>개 / 믹스견<br>2023.10.12(구조)/ 흰갈</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#none">
+                    <div class="card_img">
+                      <img src="img/animal2.png" alt="animal2">
+                    </div>
+                    <div class="card_desc">
+                      <div class="name">
+                        <h3>포도</h3>
+                        <h4>암컷(중성화 o)</h4>
+                      </div>
+                      <div class="data">
+                        <p>고양이 / 믹스묘<br>2023.12.18(구조) / 흰검</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#none">
+                    <div class="card_img">
+                      <img src="img/animal3.png" alt="animal3">
+                    </div>
+                    <div class="card_desc">
+                      <div class="name">
+                        <h3>김오목</h3>
+                        <h4>미상</h4>
+                      </div>
+                      <div class="data">
+                        <p>기타축종 / 금계<br>2024.01.01(구조) / 노랑,빨강,검정</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#none">
+                    <div class="card_img">
+                      <img src="img/animal4.png" alt="animal4">
+                    </div>
+                    <div class="card_desc">
+                      <div class="name">
+                        <h3>태풍이</h3>
+                        <h4>미상</h4>
+                      </div>
+                      <div class="data">
+                        <p>기타축종 / 고슴도치<br>2023.08.22(구조) /흰색</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#none">
+                    <div class="card_img">
+                      <img src="img/animal5.png" alt="animal5">
+                    </div>
+                    <div class="card_desc">
+                      <div class="name">
+                        <h3>소섬이</h3>
+                        <h4>암컷(중성화 미상)</h4>
+                      </div>
+                      <div class="data">
+                        <p>개 / 믹스견<br>2024.01.02(구조) / 검정</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#none">
+                    <div class="card_img">
+                      <img src="img/animal6.png" alt="animal6">
+                    </div>
+                    <div class="card_desc">
+                      <div class="name">
+                        <h3>지구</h3>
+                        <h4>암컷(중성화 o)</h4>
+                      </div>
+                      <div class="data">
+                        <p>기타축종 / 모란앵무<br>2023.12.02(구조) / 빨강,초록,노랑</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#none">
+                    <div class="card_img">
+                      <img src="img/animal7.png" alt="animal7">
+                    </div>
+                    <div class="card_desc">
+                      <div class="name">
+                        <h3>북꼬</h3>
+                        <h4>미상</h4>
+                      </div>
+                      <div class="data">
+                        <p>기타축종 / 거북이<br>2023.12.29(구조) / 노랑,검정</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#none">
+                    <div class="card_img">
+                      <img src="img/animal8.png" alt="animal8">
+                    </div>
+                    <div class="card_desc">
+                      <div class="name">
+                        <h3>풍금이</h3>
+                        <h4>암컷(중성화 x)</h4>
+                      </div>
+                      <div class="data">
+                        <p>개 / 믹스견<br>2024.01.02(구조) / 흰갈</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <button class="adopt_btn">입양하기</button>
+        <div class="adopt_bg">
+          <img src="img/adopt_circle1.svg" alt="circle1">
+          <img src="img/adopt_circle2.svg" alt="circle2">
+          <img src="img/adopt_circle3.svg" alt="circle3">
+          <img src="img/adopt_circle4.svg" alt="circle4">
+          <img src="img/adopt_dot.png" alt="dot1">
+          <img src="img/adopt_dot2.png" alt="dot2">
+        </div>
+      </article>
+      <section class="notify">
+        <div class="inner notify_inner">
+          <div class="moveSite">
+            <div class="animalLove">
+              <div class="animalLove_title">
+                <h2>동물사랑배움터</h2>
+                <button><a href="https://apms.epis.or.kr/home/kor/main.do" target="_blank"> 홈페이지 바로가기</a></button>
+              </div>
+              <img src="img/moveSite_animalLove_img.svg" alt="animalLove_img">
+            </div>
+            <div class="moveSite_botton">
+              <div class="instead">
+                <div class="instead_title">
+                  <h3><a href="https://www.animal.go.kr/login/login_index.jsp" target="_blank">공무원&대행기관</a></h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" width="8" viewBox="0 0 320 512" style="fill:#fff">
+                    <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                  </svg>
+                </div>
+                <img src="img/moveSite_instead_img.svg" alt="instead_img">
+              </div>
+              <div class="ethics">
+                <div class="ethics_title">
+                  <h3><a href="https://www.animal.go.kr/aec/index.do" target="_blank">동물실험윤리위원회</a></h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" width="8" viewBox="0 0 320 512"  style="fill:#fff">
+                    <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                  </svg>
+                </div>
+                <img src="img/moveSite_ethics_img.svg" alt="ethics_img">
+              </div>
+            </div>
+          </div>
+          <div class="click_btn2">
+            <img src="img/icon/click_me_hand.png" alt="hand">
+            <img src="img/icon/click_me_pop2.png" alt="hand">
+          </div>
+          <div class="notify_box">
+            <div class="notify_title">
+              <a href="subpage01.html"><h2>공지사항</h2></a>
+              <a href="subpage01.html"><img src="img/icon/notify_plus.svg" alt="plus"></a>
+            </div>
+            <span></span>
+            <ul class="notify_list">
+              <li class="new"><a href="#none">2021년도 동물복지축산 정기교육 온라인 실시알림</a></li>
+              <li><a href="#none">Open API 점검 안내 [11.23.(목) 10:00~13:00]</a></li>
+              <li><a href="#none">[ 2023년 동물복지컨설턴트 육성교육 ] 공고</a></li>
+              <li><a href="#none">2023년 동물복지축산농장 지원교육 안내</a></li>
+              <li><a href="#none">시스템 점검 안내 [ 10.05(목) 18:00~19:00 ]</a></li>
+              <li><a href="#none">제 13회 동물사랑 사진공모전 수상작 이미지 다운로드 (핸드폰용)</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="inner footer_inner">
+        <div class="information_top">
+          <div class="agency_box">
+            <img src="img/footer_logo.png" alt="logo">
+            <p>39660 경상북도 김천시 혁신8로 177(율곡동)<br>Copyright by Animal and Plant Quarantine Agency. All Rights Reserved.</p>
+          </div>
+          <div class="customer">
+            <div class="customer_title">
+              <h3>동물보호 상담센터</h3>
+              <div class="number">
+                <svg xmlns="http://www.w3.org/2000/svg" height="17" width="18" viewBox="0 0 512 512"  style="fill:#fff">
+                  <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+                </svg>
+                <h2>1577-0954</h2>
+              </div>
+            </div>
+            <p>시스템 문의 : 054 - 810. 8627<br>상담시간 : 평일 09:00 - 18:00</p>
+          </div>
+        </div>
+        <span></span>
+        <div class="information_bottom">
+          <ul>
+            <li><a href="https://www.animal.go.kr/front/community/show.do?boardId=contents&seq=183&menuNo=7000000001" target="_blank">시스템 소개</a></li>
+            <li><a href="https://www.animal.go.kr/front/community/show.do?boardId=contents&seq=222&menuNo=8000300007" target="_blank">저작권 정책</a></li>
+            <li><a href="https://www.animal.go.kr/front/community/show.do?boardId=contents&seq=235&menuNo=8000200003" target="_blank">이용안내</a></li>
+            <li><a href="https://www.animal.go.kr/front/community/show.do?boardId=contents&seq=300096&menuNo=8000200004" target="_blank">개인정보처리방침</a></li>
+          </ul>
+          <div class="logo_box">
+            <img src="img/footer_N_logo.png" alt="N_logo">
+            <img src="img/footer_webmark.png" alt="webmark">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="quickMenu">
+      <a href="#none" id="gototop">
+        <img src="img/top.svg" alt="top">
+        <h3>TOP</h3>
+      </a>
+      <a href="#none" id="customerSenter">
+        <svg xmlns="http://www.w3.org/2000/svg" height="30" width="35" viewBox="0 0 448 512">
+          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" style="fill:rgb(255, 255, 255);"/>
+        </svg>
+        <h3>원격지원</h3>
+      </a>
+    </div>
+  </div>
+  <article class="login_modal">
+    <div class="modal_inner">
+      <img src="img/login/modal_close.svg" alt="closeBtn" id="closeBtn">
+    <h2>로그인</h2>
+    <form>
+      <div class="login">
+        <input type="text" placeholder="아이디">
+        <input type="password" placeholder="비밀번호"  id="userpw" maxlength="12" minlength="6"
+        required>
+      </div>
+      <div class="login_check">
+        <div class="login_checkBox">
+          <input type="checkbox" id="checklogin">
+          <label for="checklogin">로그인 유지하기</label>
+        </div>
+        <h4><a href="#none"> 아이디 / 비밀번호 찾기</a></h4>
+      </div>
+      <div class="login_btns">
+        <button class="login_btn">로그인</button>
+        <button class="login_btn">간편인증으로 로그인하기</button>
+        <div class="appBox">
+          <img src="img/login/modal_app1.png" alt="modal_app1">
+          <img src="img/login/modal_app2.png" alt="modal_app2">
+          <img src="img/login/modal_app3.png" alt="modal_app3">
+          <img src="img/login/modal_app4.png" alt="modal_app4">
+          <img src="img/login/modal_app5.png" alt="modal_app5">
+          <img src="img/login/modal_app6.png" alt="modal_app6">
+          <img src="img/login/modal_app7.png" alt="modal_app7">
+        </div>
+      </div>
+      <div class="login_desc">
+        <h4>회원이 아니신가요? <span>회원가입</span></h4>
+        <h4><span>비회원 주문조회</span></h4>
+      </div>
+    </form>
+    </div>
+  </article>
+  <div class="modal_bg"></div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/custom2.js"></script>
+  <script src="js/swiper.js"></script>
+</body>
+</html>
