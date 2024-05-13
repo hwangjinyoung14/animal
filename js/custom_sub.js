@@ -253,6 +253,20 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+/* quickmenu */
+let btn = document.querySelector('#gototop');
+let btn2 = document.querySelector('#customerSenter');
+window.addEventListener('scroll', function(){
+  let scrollAmount = document.documentElement.scrollTop; //지역변수
+  console.log(scrollAmount);
+  if(scrollAmount>400){
+    btn.classList.add('visible');
+    btn2.classList.add('visible2');
+  }else{
+    btn.classList.remove('visible');
+    btn2.classList.remove('visible2');
+  }
+});
 
 /*modal*/
 const login = document.getElementById('login');

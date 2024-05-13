@@ -1092,6 +1092,76 @@ footer{
   bottom: 10px;
 }
 
+/* quick menu */
+.quickMenu{
+  position: fixed;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  z-index: 30;
+  right: 3rem;
+  bottom: 3rem;
+  color: white;
+}
+
+#gototop{
+  width: 90px;
+  height: 91px;
+  text-align: center;
+  border-radius: 20px;
+  background: #9F9CFF;
+  transition: 0.5s;
+  opacity: 0;
+  transition: 0.35s;
+}
+
+#gototop.visible{opacity: 1;}
+
+#gototop:hover{
+  background: var(--point-color);
+}
+
+#gototop>img{
+  margin: -15px 0 -25px;
+}
+
+#gototop>h3{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#customerSenter>h3{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#customerSenter{
+  width: 90px;
+  height: 91px;
+  text-align: center;
+  border-radius: 20px;
+  background: #9F9CFF;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+  opacity: 0;
+  transition: 0.35s;
+}
+
+#customerSenter.visible2{opacity: 1;}
+/* 같은 효과여도 같은 클래스주면 안된다.*/
+
+#customerSenter>svg{
+  margin-bottom: 5px;
+}
+
+#customerSenter:hover{
+  background: var(--point-color);
+}
+
 /*modal*/
 .login_modal{
   width: 479px;

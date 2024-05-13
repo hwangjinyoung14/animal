@@ -307,10 +307,6 @@
     font-weight: 600;
   }
   
-  .quickMenu{
-    display: none;
-  }
-  
   .information_bottom {
     margin-top: 20px;
     flex-direction: column;
@@ -503,9 +499,6 @@
 
   .number>svg{width: 15px;}
   
-  .quickMenu{display: none;}
-
-  
   .footer_inner span {width: 100%;}
 
   .information_bottom {
@@ -624,7 +617,7 @@
     width: 50px;
     position: absolute;
     left: 90%;
-    top: 0px;
+    top: 10px;
   }
 
   .login_modal>.modal_inner>h2{margin-top: 45px;}
@@ -647,6 +640,9 @@
 
   .login_desc>h4:nth-child(2){margin-top: 30px;}
   
+  .quickMenu{
+    right: 2rem;
+  }
 }
 
 @media (max-width:390px){
@@ -657,6 +653,38 @@
 
   .customer::before{
     left: 8.3rem;
+  }
+
+  
+  /* quick menu */
+  #gototop,
+  #customerSenter{
+    width: 70px;
+    height: 71px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+  #customerSenter{
+    gap: 0;
+  }
+
+  #gototop>img{
+    width: 60px;
+  }
+
+  #customerSenter>svg{
+    width: 40px;
+  }
+
+  #gototop>h3,
+  #customerSenter>h3{
+    font-size: 16px;
+    font-weight: 600;
   }
 }
 
