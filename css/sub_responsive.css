@@ -276,22 +276,23 @@
   }
 
   .customer{
-    width:80%;
-    height: 90px;
+    width: 100%;
+    height: 5rem;
+    padding: 1rem 2.6rem;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     position: relative;
     margin-top: 20px
   }
 
   .customer::before{
     content: '';
-    width: 100%;
-    height: 100%;
+    width: 10px;
+    height: 90%;
     position: absolute;
-    left: 48%;
+    left: 11rem;
     top: 30%;
     background: url(../img/footer_customer_bar.png) no-repeat;
     }
@@ -341,7 +342,7 @@
 
 }
 
-@media (max-width:390px){
+@media (max-width:500px){
   
   /*header*/
   .logo{display: none;}
@@ -490,25 +491,6 @@
   .trigger{display: none;}
 
   .footer_inner{width: 80%;}
-
-  .customer{
-    width: 100%;
-    height: 5rem;
-    padding: 1rem 1.2rem 1rem 1.2rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    margin-top: 20px
-  }
-
-  .customer::before{
-    content: '';
-    width: 90%;
-    height: 90%;
-    left: 8.3rem;
-    }
   
   .customer_title{margin-top: 10px;}
 
@@ -566,7 +548,15 @@
     align-items: center;
   }
 
-  .date_box {gap: 4px;}
+  .date_box{
+    width: 100%;
+    justify-content: space-between;
+    gap: 14px;
+  }
+
+  .date_box>input{
+    flex: 1;
+  }
 
   input[type=text]{width: 100%;}
 
@@ -624,15 +614,17 @@
   }
 
   .modal_inner{
-    width: 80%;
-    margin: auto;
+    width: 90vw;
+    padding: 2rem;
+    margin: auto ;
+    position: relative;
   }
 
   .login_modal>.modal_inner>img{
     width: 50px;
-    position: relative;
-    left: 18rem;
-    top: 10px;
+    position: absolute;
+    left: 90%;
+    top: 0px;
   }
 
   .login_modal>.modal_inner>h2{margin-top: 45px;}
@@ -654,5 +646,19 @@
   }
 
   .login_desc>h4:nth-child(2){margin-top: 30px;}
+  
 }
+
+@media (max-width:390px){
+  
+  .customer{
+    padding: 1rem 1.2rem 1rem 1.2rem;
+  }
+
+  .customer::before{
+    left: 8.3rem;
+  }
+}
+
+
 

@@ -74,21 +74,23 @@ body{
   background: var(--swiper-pagination-bullet-inactive-color,#9ea1bb);
 }
 
-.swiper-button-next, .swiper-button-prev {
-  top: var(--swiper-navigation-top-offset,52%)!important;
+
+.swiper-button-next,
+.swiper-button-prev{
+  width: 70px;
+  height: 70px;
+  position: relative;
+  bottom: 178px!important;
 }
 
 .swiper-button-next {
-  background: url(../img/update_btn2.png) no-repeat;
-  transform: translateX(-1215px);
-}
-
-.swiper-button-next:hover {
+  left: 292px;
+  background: url(../img/update_btn2.png) no-repeat center center;
 }
 
 .swiper-button-prev {
-  background: url(../img/update_btn.png) no-repeat;
-  transform: translateX(-80px);
+  left: -66px;
+  background: url(../img/update_btn.png) no-repeat center center;
 }
 
 .swiper-button-next::after,
@@ -342,14 +344,14 @@ body{
 .notify{
   width: 100%;
   height: 700px;
-  padding: 0.1px;
+  padding-top: 210px;
   color: white;
 }
 
 .notify_inner{
   width: 1120px;
   height: 345px;
-  margin: 210px auto 0;
+  margin: auto ;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -491,6 +493,61 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.notify_title>a:nth-child(1){
+  position: relative;
+}
+
+/*click_me*/
+.click_btn2>img:nth-child(1){
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  animation-name: click3;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  transition: 1s;
+  opacity: 0;
+}
+
+@keyframes click3{
+  0%{
+    left: 80px;
+    top: 20px;
+    opacity: 0;  
+  }
+  100%{
+    top: 15px;
+    opacity: 1;  
+  }
+}
+
+.click_btn2>img:nth-child(2){
+  position: absolute;
+  top: 5px;
+  left: 60px;
+  animation-name: click4;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  transition: 1s;
+  opacity: 0;
+}
+
+@keyframes click4{
+  0%{
+    opacity: 0;  
+    transform: scale(1.4); 
+  }
+  100%{
+    opacity: 1; 
+  }
+}
+
+.click_btn2>img{
+  width: 24px;
 }
 
 .notify_title>a>h2{

@@ -70,14 +70,18 @@ let swiper2 = new Swiper(".adopt_swiper", {
   breakpoints: {
     200: {
       slidesPerView: 1,  //브라우저가 768보다 클 때
-      spaceBetween: 5,
+      spaceBetween: 0,
     },
     400: {
       slidesPerView: 2,  //브라우저가 768보다 클 때
       spaceBetween: 5,
     },
     1024: {
-      slidesPerView: 4,  //브라우저가 1024보다 클 때
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1920: {
+      slidesPerView: 4,
       spaceBetween: 50,
     },
   },

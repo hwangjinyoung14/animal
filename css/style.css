@@ -28,66 +28,6 @@ button{
   color: white;
 }
 
-/*click_me*/
-.click_btn2>img:nth-child(1){
-  position: absolute;
-  right: 24.5rem;
-  top: 3.6rem;  
-  animation-name: click3;
-  animation-duration: 1.5s;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-  transition: 1s;
-  opacity: 0;
-}
-
-@keyframes click3{
-  0%{
-    right: 24.5rem;
-    top: 3.6rem;
-    opacity: 1;  
-  }
-  50%{
-    right: 24rem;
-    top: 3.8rem;
-    opacity: 0;   
-  }
-  100%{
-    right: 24.5rem;
-    top: 3.6rem;
-    opacity: 1;  
-  }
-}
-
-.click_btn2>img:nth-child(2){
-  position: absolute;
-  right: 25.3rem;
-  top: 3rem;  
-  animation-name: click4;
-  animation-duration: 1.5s;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-  transition: 1s;
-  opacity: 0;
-}
-
-@keyframes click4{
-  0%{
-    opacity: 1;  
-  }
-  50%{
-    transform: scale(1.4);
-    opacity: 0;   
-  }
-  100%{
-    opacity: 1;  
-  }
-}
-
-.click_btn2>img{
- width: 24px;
-}
-
 /* header */
 header{
   width: 100%;
@@ -354,7 +294,6 @@ nav:hover::after{
 }
 
 /*main*/
-
 .main{
   width: 100%;
   height: 1504px;
@@ -364,27 +303,26 @@ nav:hover::after{
 }
 
 .mainbg_inner{
-  width: 1900px;
+  width: 100%;
+  max-width: 1900px;
   margin: auto;
   position: relative;
   top: -700px;
 }
 
 .search{
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  margin-top: 113px;
+  width: 458px;
+  height: 54px;
   position: relative;
-  margin-left: 20px;
+  margin: 113px auto 0;
+  text-align: center;
 }
 
 .search>input{
-  width: 458px;
-  height: 54px;
-  border-radius: 50px;
+  width: 100%;
+  height: 100%;
   border: 4px solid var(--point-color);
-  box-shadow: 0px 2px 4.7px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
   padding-left: 22px;
 }
 
@@ -397,23 +335,31 @@ input::placeholder {
   color:var(--bg-color);
 }
 
-.search>img{
-  position: absolute;
-  top: 10px;
-  right: 445px;
-  z-index: 10;
-  cursor: pointer;
-}
-
-.search>span{
-  width: 66px;
-  height: 54px;
-  border-radius: 0px 50px 50px 0px;
-  background: var(--point-color);
-  display: block;
+.search_icon{
   position: absolute;
   top: 0;
-  right: 422px;
+  right: 0;
+}
+
+.search_icon>img,
+.search_icon>span{
+  display: block;
+} 
+
+.search_icon>img{
+  width: 30px;
+  height: 32px;
+  float: left;
+  z-index: 30;
+  cursor: pointer;
+  transform: translate(15px, 10px);
+}
+
+.search_icon>span{
+  width: 66px;
+  height: 52px;
+  border-radius: 0px 50px 50px 0px;
+  background: var(--point-color);
 }
 
 .main_text{
